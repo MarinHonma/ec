@@ -9,3 +9,4 @@ class Store extends Model
 {
     use HasFactory;
 }
+
