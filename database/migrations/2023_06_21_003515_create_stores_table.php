@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('stores', function (Blueprint $table) {
             $table->id();
-            $table->id('seller_id');
+            $table->foreignId('seller_id')->constrained();
             $table->string('name', 30);
             $table->string('overview', 200);
             $table->string('image_path');
